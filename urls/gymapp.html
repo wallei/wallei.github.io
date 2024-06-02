@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>La Rutina de Edilson!</h1>
+
+    <section>
+        <h2>Día 1 - Pecho-Hombros</h2>
+        <ul id="day1">
+            <li class="task">Press de pecho plano HAMMER(22) - SERIES: 3 - REP: 15</li>
+            <li class="task">Press de pecho inclinado HAMMER(21) - SERIES: 3 - REP: 15</li>
+            <li class="task">Press de pecho declinado HAMMER(24) - SERIES: 3 - REP: 15</li>
+            <li class="task">Apertura Mariposa(8) - SERIES: 3 - REP: 15</li>
+            <li class="task">Vuelos frontales alternados -  - SERIES: 3 - REP: 10/10</li>
+            <li class="task">Vuelos laterales - SERIES: 3 - REP: 15</li>
+            <li class="task">Deltoides posterior mariposa (8) - SERIES: 3 - REP: 15</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Día 2 - Espalda-Biceps</h2>
+        <ul id="day2">
+            <li class="task">Pulldown(02) - SERIES: 3 - REP: 15</li>
+            <li class="task">Remo Hammer - SERIES: 3 - REP: 15 </li>
+            <li class="task">Remo T - SERIES: 3 - REP: 15</li>
+            <li class="task">Remo bajo Hammer - SERIES: 3 - REP: 15 </li>
+            <li class="task">Curl de biceps alternados Remo Hammer - SERIES: 3 - REP: 10/10 </li>
+            <li class="task">Banco scott Hammer - SERIES: 3 - REP: 15 </li>
+            <li class="task">Curl martillo alternados - SERIES: 3 - REP: 10/10 </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Día 3 - Piernas-Triceps</h2>
+        <ul id="day3">
+            <li class="task">Sillon de cuadriceps - SERIES: 3 - REP: 15</li>
+            <li class="task">Camilla femoral  - SERIES: 3 - REP: 15</li>
+            <li class="task">Maquina Aductor  - SERIES: 3 - REP: 15</li>
+            <li class="task">Prensa - SERIES: 3 - REP: 15</li>
+            <li class="task">Triceps copa </li>
+            <li class="task">Fondos Hammer</li>
+            <li class="task">Extension de triceps polea</li>
+        </ul>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tasks = document.querySelectorAll('.task');
+            tasks.forEach(task => {
+                task.addEventListener('click', () => {
+                    task.classList.toggle('completed');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
