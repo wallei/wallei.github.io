@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guía Vim Express 🐧</title>
+    <style>
+        body {
+            font-family: 'Fira Code', monospace;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #c9d1d9;
+        }
+
+        .container {
+            background: #2d2d2d;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 0 20px #0000004d;
+        }
+
+        h1 {
+            color: #569cd6;
+            text-align: center;
+            border-bottom: 2px solid #3c3c3c;
+            padding-bottom: 1rem;
+        }
+
+        .comando {
+            background: #252526;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #569cd6;
+        }
+
+        code {
+            color: #dcdcaa;
+            font-size: 1.1rem;
+        }
+
+        .nota {
+            color: #6a9955;
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px dashed #6a9955;
+            border-radius: 5px;
+        }
+
+        .vim-keys {
+            color: #ce9178;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Comandos Mágicos con Vim</h1>
+
+        <div class="comando">
+            <code>touch dockerfile</code>
+            <p>✨ Creas el archivo Dockerfile</p>
+        </div>
+
+        <div class="comando">
+            <code>touch chocho</code>
+            <p>📄 Generas el archivo 'chocho' (¿secretos docker? 🤔)</p>
+        </div>
+
+        <div class="comando">
+            <code>vim dockerfile</code>
+            <p>🎮 Entras al editor Vim (modo normal)</p>
+        </div>
+
+        <div class="nota">
+            <p>🕹️ <span class="vim-keys">INSERT</span> → Modo edición<br>
+               🛑 <span class="vim-keys">ESC</span> → Vuelves al modo comando</p>
+        </div>
+
+        <div class="comando">
+            <code>:x!</code>
+            <p>💾 Guardas cambios con estilo (¡y fuerzas la salida!)</p>
+        </div>
+
+        <div class="comando">
+            <code>:q!</code>
+            <p>🚫 Sales sin guardar (¡bye cambios no deseados!)</p>
+        </div>
+
+        <div class="nota">
+            <h3>Pro Tip 💡</h3>
+            <p>Usa <span class="vim-keys">i</span> para insertar texto<br>
+               <span class="vim-keys">:wq</span> = Guardar y salir<br>
+               ¡No te asustes si al principio solo sabes salir con <span class="vim-keys">:q!</span>! 😅</p>
+        </div>
+    </div>
+</body>
+</html>
